@@ -33,3 +33,53 @@ body {
 
 </body>
 </html>
+git add .
+git commit -m "update tampilan"
+git push
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: white;
+  font-family: Arial;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background: cyan;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 30px cyan;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="circle"></div>
+<h1>Website Pertama Saya 🚀</h1>
+
+</body>
+</html>
+
