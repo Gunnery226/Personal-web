@@ -294,9 +294,37 @@
       flex-shrink:0;
       object-fit:cover;
     }
+    .foto{
+      width:300px;
+      border-radius:15px;
+    }
+
+    #popup{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.7);
+      backdrop-filter:blur(8px);
+
+      display:none;
+
+      justify-content:center;
+      align-items:center;
+    }
+
+    #popup img{
+      width:90%;
+      border-radius:20px;
+    }
   </style>
 </head>
-<body>
+<body><img src="LINK_GAMBAR" class="foto" onclick="buka(this.src)">
+
+<div id="popup">
+  <img id="popup-img">
+</div>
   <div class="container">
     <!-- Header Red soul mazda -->
     <div class="header">
@@ -380,7 +408,18 @@
       </div>
     </div>
   </div>
-</body>
+</body><script>
+
+function buka(src){
+  document.getElementById("popup").style.display="flex";
+  document.getElementById("popup-img").src=src;
+}
+
+document.getElementById("popup").onclick=function(){
+  this.style.display="none";
+}
+
+</script>
 </html>
 
 
